@@ -1,0 +1,77 @@
+:root {
+  --page-bg: #f4f7fb;
+  --panel-bg: #ffffff;
+  --text-main: #172033;
+  --muted-border: #d9e2ef;
+}
+
+body {
+  background: var(--page-bg);
+  color: var(--text-main);
+}
+
+.login-shell {
+  display: grid;
+  min-height: calc(100vh - 120px);
+  place-items: center;
+}
+
+.login-panel,
+.panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--muted-border);
+  border-radius: 8px;
+  box-shadow: 0 12px 35px rgba(23, 32, 51, 0.08);
+  padding: 24px;
+}
+
+.login-panel {
+  width: min(100%, 430px);
+}
+
+.task-list {
+  display: grid;
+  gap: 12px;
+}
+
+.task-card {
+  border: 1px solid var(--muted-border);
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+}
+
+.task-card.done {
+  background: #f6fbf7;
+}
+
+.task-title {
+  overflow-wrap: anywhere;
+}
+
+.badge-priority-low {
+  background: #eef6ff;
+  color: #14558f;
+}
+
+.badge-priority-medium {
+  background: #fff7db;
+  color: #725300;
+}
+
+.badge-priority-high {
+  background: #ffe9e6;
+  color: #9b2718;
+}
+
+@media (max-width: 576px) {
+  .login-panel,
+  .panel {
+    padding: 18px;
+  }
+
+  .task-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

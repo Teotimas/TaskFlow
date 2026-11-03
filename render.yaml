@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: taskflow-web-system
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start

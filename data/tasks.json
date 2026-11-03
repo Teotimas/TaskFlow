@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "Labarotorinis darbas",
+    "description": "atsiskaityti interneto technologiju labaratorini darba iki 05-29",
+    "priority": "high",
+    "deadline": "2026-05-17",
+    "status": "active",
+    "createdAt": "2026-05-17T14:42:08.081Z",
+    "updatedAt": "2026-05-20T17:57:19.509Z"
+  }
+]
